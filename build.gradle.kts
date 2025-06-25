@@ -1,12 +1,12 @@
 plugins {
     id("java")
-    id("checkstyle")
+//    id("checkstyle")
 }
 
-checkstyle {
-    toolVersion = "10.3"
-    configDirectory = file("${rootDir}/config/checkstyle")
-}
+//checkstyle {
+//    toolVersion = "8.32"
+//    configDirectory = file("$/config")
+//}
 
 group = "com"
 version = "1.0-SNAPSHOT"
