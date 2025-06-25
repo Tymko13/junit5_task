@@ -1,12 +1,13 @@
 plugins {
     id("java")
-//    id("checkstyle")
+    id("com.diffplug.spotless") version "6.25.0"
 }
 
-//checkstyle {
-//    toolVersion = "8.32"
-//    configDirectory = file("$/config")
-//}
+spotless {
+    java {
+        googleJavaFormat()
+    }
+}
 
 group = "com"
 version = "1.0-SNAPSHOT"
