@@ -26,6 +26,9 @@ jobs:
       - name: Run Spotless
         run: ./gradlew spotlessApply
 
+      - name: Run Tests
+        run: ./gradlew test
+
       - name: Build project
         run: ./gradlew build
 
